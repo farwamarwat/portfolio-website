@@ -1,0 +1,131 @@
+.about-page {
+  min-height: 100vh;
+  padding: 120px 2rem 4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-layout {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-image-section {
+  flex-shrink: 0;
+}
+
+.about-pic-wrapper {
+  position: relative;
+}
+
+.about-pic-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border-radius: var(--radius-lg);
+  background: var(--gradient-1);
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.about-pic {
+  width: 280px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  border: 4px solid var(--bg-primary);
+  display: block;
+}
+
+.about-text-section h3 {
+  font-size: 1.5rem;
+  color: var(--accent-light);
+  margin-bottom: 1rem;
+}
+
+.about-text-section p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.about-text-section strong {
+  color: var(--text-primary);
+}
+
+.about-stats {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.stat-item {
+  text-align: center;
+  flex: 1;
+}
+
+.stat-number {
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  background: var(--gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-label {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.about-interests h4 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.8rem;
+}
+
+.interest-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.interest-tag {
+  background: rgba(124, 58, 237, 0.12);
+  color: var(--accent-light);
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(124, 58, 237, 0.2);
+}
+
+@media (max-width: 768px) {
+  .about-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-pic {
+    width: 200px;
+    height: 230px;
+  }
+
+  .about-stats {
+    gap: 1rem;
+  }
+
+  .interest-tags {
+    justify-content: center;
+  }
+}
