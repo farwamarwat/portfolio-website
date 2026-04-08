@@ -89,7 +89,6 @@
   line-height: 1.6;
 }
 
-/* Cards */
 .cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -126,7 +125,6 @@
   line-height: 1.7;
 }
 
-/* Skills Grid */
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -149,7 +147,6 @@
   border-color: var(--accent);
 }
 
-/* Expertise List */
 .expertise-list {
   list-style: none;
   padding: 0;
@@ -181,7 +178,6 @@
   background: var(--accent);
 }
 
-/* Responsive */
 @media (max-width: 900px) {
   .cards-container {
     grid-template-columns: 1fr;

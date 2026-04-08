@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import './ContactPage.css';
 
-// TODO: Replace these with your actual EmailJS IDs
 const EMAILJS_SERVICE_ID = 'service_0uvulk2';
 const EMAILJS_TEMPLATE_ID = 'template_7y3y919';
 const EMAILJS_PUBLIC_KEY = '54Z2O6AcW_CmQgzrW';
@@ -16,7 +15,7 @@ const ContactPage = () => {
     phoneNumber: '',
     message: '',
   });
-  const [status, setStatus] = useState(null); // 'success' | 'error' | 'sending'
+  const [status, setStatus] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
